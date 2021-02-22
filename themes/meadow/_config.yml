@@ -67,17 +67,16 @@ menu:
 
 # 社交链接
 social:
-  E-Mail: jsroads@163.com || icon-mail
+  E-Mail: asroads@163.com || icon-mail
   jsroads: https://github.com/jsroads || icon-github
   asroads: https://github.com/asroads || icon-github
-  QQ群: https://jq.qq.com/?_wv=1027&k=fTVxmSSA || icon-qq
   # 此外还预置了以下社交图标，可直接仿照格式进行引用，如需其他图标请自行添加图标库或与我联系
   # icon-twitter、icon-facebook、icon-vk、icon-stack-overflow、icon-youtube、icon-Instagram、icon-skype
   # icon-qq、icon-wechat、icon-alipay、icon-paypal、icon-telegram、icon-twitch、icon-discord
 
 #友情链接
 links:
-  麦田守望者: https://seazhang.github.io/
+  Asroads的博客: https://asroads.github.io/
 ##########
 
 #####页脚#####
