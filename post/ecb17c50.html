@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            看乌鸦想到的告诫 | Jsroads&#39;Blog
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Jsroads'Blog" type="application/atom+xml">
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Jsroads&#39;Blog</a>
+    <a href="/" class="header-subtitle mdui-typo-headline">每次的成长都是从看到自己的无知开始</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">首页</div>
+                </a>
+            
+                
+                <a href="/categories/book" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">读书</div>
+                </a>
+            
+                
+                <a href="/categories/life" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">随笔</div>
+                </a>
+            
+                
+                <a href="/categories/sys" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-gallery"></i>
+                    </div>
+                    <div class="mdui-list-item-content">系列</div>
+                </a>
+            
+                
+                <a href="/categories/tool" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-blog"></i>
+                    </div>
+                    <div class="mdui-list-item-content">技巧</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.png"/>
+                
+            </div>
+            <div class="sidebar-author-name">jsroads</div>
+            <div class="sidebar-description">静坐常思己过，闲谈莫论人非</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="/asroads@163.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://github.com/jsroads" target="_blank" rel="noopener" class="mdui-chip-title">jsroads</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://github.com/asroads" target="_blank" rel="noopener" class="mdui-chip-title">asroads</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a href="https://asroads.github.io/" target="_blank" rel="noopener" class="mdui-list-item mdui-ripple">
+                            Asroads的博客
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/post/ecb17c50.html">看乌鸦想到的告诫</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2021-02-21
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2021-02-22
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;<a class="category-link" href="/categories/life/">life</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=看乌鸦想到的告诫&url=http://life.asroads.com/post/ecb17c50.html&pic=http://life.asroads.com/icons/favicon.ico&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=看乌鸦想到的告诫&url=http://life.asroads.com/post/ecb17c50.html&via=jsroads" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://life.asroads.com/post/ecb17c50.html" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://life.asroads.com/post/ecb17c50.html" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://life.asroads.com/post/ecb17c50.html&title=看乌鸦想到的告诫" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Jsroads&#39;Blog&title=看乌鸦想到的告诫&summary=静坐常思己过，闲谈莫论人非&pics=http://life.asroads.com/icons/favicon.ico&url=http://life.asroads.com/post/ecb17c50.html" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://life.asroads.com/post/ecb17c50.html&text=看乌鸦想到的告诫" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/%E9%9A%8F%E7%AC%94/ >随笔</a>
+      </i>
+    
+  </div>
+
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <p>这是一篇旧文，是当时对生活的一种小小感悟，如今写了博客，就搬过来分享一下，其实如今看来，有些内容还不过时，有些稍有陈旧，不过为了保持文字的原汁原味，就不做删改了。</p>
+<a id="more"></a>
+
+<p><img src="/post/ecb17c50/1240-20210222145903922.jpeg" alt="img"></p>
+<p>镇楼图</p>
+<p>​    昨天傍晚时分，夕阳的余晖洒满了周围，好想安静无忧的看一会儿这雨后的放晴的世界，可对面学校的楼上来了两只乌鸦，歪着头对着隔壁的小区叫了一大会儿，让我一下子想了许多，突然觉得有些凉意，经过许久的琢磨，有了下文。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903865.jpeg" alt="img"></p>
+<p>​    参加工作这些年，特别是很少写关于职业生涯的工作，主要顾虑到自己的年纪不大，见识短，写出来会如盲人摸象，再者，工作中都比较携带主观感情，很难将心中的“我”从环境里抽离，站到一个更高的视角看。于是我总是在自己偶尔闲余的时候，去思考一些这些年的职业中的所见所闻，所思所感。成功的公司有很多成功的缘由和因素，失败的公司也有许许多多的失败的诱因，成功者手持着成功利剑一路斩将，终于登上了闪耀的舞台，其实或许他们口中的成功秘诀也只是成功后的一种总结。同样失败者亦然，失败了，总结的失败的教训未必是失败的真正的缘由，或许，只是一些臆想的因素。所以接下来我不想谈成功的那些准则，也不想单一的谈失败的那些常犯的错误，我只是对目前我所熟知的的一些词，做一个自己的见解。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903752.jpeg" alt="img"></p>
+<p>​    什么是乌鸦的告诫，就是能够提前感知事物的变化规律，就是我们常说的眼界，对眼界的理解，这个除了天赋，还有一个人过去所有见识智慧的积累，这个没有更好的手段，属于天赋+勤奋+机遇的集合。两个眼界不同的人是很难一起谈未来的，著名的网络上流传的“三季人”的段子，就是如此，和一个感知很差劲的人，一起谈工作项目的变化，如对牛弹琴也。年少的我，以前总是很容易成为那只讨人厌的“乌鸦”，年少因为接触的知识，圈子，书籍，有限，而大多数形而上的东西，儒家思想占据了绝对优势，大概是从28岁开始，更多的接触一些其他的东西，有了佛家，道家，对世界的认知的理解和认知开始变化一些，开始不再多言，静观其变。去过寺庙的人都很容易记得门口的那尊笑呵呵的弥勒佛，却很少关注他背后的手持神器，面目狰狞的金刚，说佛慈悲的，不免显得肤浅了些。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903777.jpeg" alt="img"></p>
+<p>​    时代是变化的，互联网行业的变化更是其他的行业的几倍，如果一个人离开互联网行业两年，等他回过来看时，已经不是当初的那个样子了，我这么说，你是不是很熟悉？是的，这个就是我们小学课本里那边很著名的成语“刻舟求剑”的变种，很多人当初成功了一次，打开了一扇成功的门，就妄想着自己持有了一把打开所有成功门的钥匙，于是步履匆匆的去尝试各种各样的形式，看别人成功了，以为自己也能照搬，偶尔受了对方的劝告，还退给别人一句：“想当年，我也是牛逼过的……” 《三体》里说出了我最想说的，弱小和无知不是生存的障碍，傲慢才是。任何傲慢的狂言，都会被时代碾压的粉碎，面目全非。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903864.jpeg" alt="img"></p>
+<p>​    不管你是自主创业，还是给别人打工，你要警惕那些工作里让你“All In”的人，酒桌上，有些人几杯酒下肚，开始胡言乱语了，给你造梦，给你画饼，给你幻想一个未来，说，小伙子，好好干，不会亏得你的，有时候顺便带点让你恐惧的话，比如，公司，在业界已经算是不错的公司了，某某公司更甚，外面的市场不好，等各种云云。人是很奇怪的，一旦平静下来就会滋生懒惰因子，懒惰让人变得恐惧，害怕无常。其实反观那些身边那些离开的人，其实没有几个如酒桌之言，混的如何不好的，小到职业环境，大到人类环境，我们之所以要进步，究其原因就是不让自己淘汰。如何不让自己被淘汰呢？老祖宗留下了一套哲学，就是竞争，和时间赛跑，和周围赛跑，你只要比周围的人跑的快，变化的快，就能不被环境淘汰，苦心人，天不负。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903910.jpeg" alt="img"></p>
+<p>​    人类简史里有一个细节值得注意，就是说人类是一种善于撒谎的物种，欺骗，不否认，我们的周围充斥着各种披着华丽外衣的谎言，人生苦短，如果一个人想成大事，必须依靠外部力量，一种最直接的方法，就是造梦，给别人造梦，让他人以为是“我们”，其实在胜利果实瓜熟蒂落的时候，才知道只自己并不在“我们”之列，充其量只是那个围着磨盘永远吃不到胡萝卜的小驴。世界是公平的，而又是不公平的，公平和不公平没有一把大家公认度量的尺子，卑鄙是卑鄙者的通行证， 高尚是高尚者的墓志铭。很多公司都会搞出一套企业文化，而每个企业的文化都各不相同，不是说你说诚实是公司文化，它就是公司文化，公司文化是一种反馈的东西，必须有长期不断的渗透。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903880.jpeg" alt="img"></p>
+<p>​    接下来说说战略和战术的论述，很多时候，战略的制定决定了方向，战术的制定决定了如何去实现。比如说，我们决定100个人往南走，到达1000公里的地方。往南走是战略，如何走1000里到达，是战术。愚蠢的制定者是这样算的，假如一个人一小时走10公里，那么100个小时后可以到达，如果我们每天走10个小时，那么10天后到达，既然有了战略和战术，那我们出发吧！这样的制定，后果，你懂的。聪明的制定者会考虑很多，人性，天气，交通工具，方向偏离等等。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903919.jpeg" alt="img"></p>
+<p>​    其实无论是战略的失败还是战术的失败都绝对会导致结果的失败。于是乎衍生了一直偷懒模式，这个模式叫做以结果为导向，初看起来这个没啥毛病，这个不是和小平同志的“黑猫，白猫，逮着老鼠才是好猫”的理论不谋而合啊。如果一个企业喜欢以结果为导向，就会有欺上瞒下，内斗的现象，为了达到目的，不择手段。正是楚王好细腰，宫中多饿死。如果一个老板喜欢体育运动，公司肯定会有一股体育文化，老板喜欢加班，你放心，每逢节假日，必定有人冲锋陷阵。你的爱好，决定了你的生活，老板的爱好，决定了一个公司的文化。有人说了，我看微波粼粼，哪有你说的那么严重啊，哈哈，我只能对这样的人，笑而不语。有人的地方就有江湖，人在江湖，身不由己这个道理我想凡是经过世事的人都明白，你可以做那个被人卖了还帮别人数钱的傻子，他就会做那个视而不见的瞎子。</p>
+<p><img src="/post/ecb17c50/1240-20210222145904050.jpeg" alt="img"></p>
+<p>   乌鸦的告诫，有几种，比如《谏太宗十思疏》里那句“善始者实繁 克终者盖寡”，再如《孟子见梁惠王》的“苟为后义而先利，不夺不餍。未有仁而遗其亲者也，未有义而后其君者也。王亦曰仁义而已矣，何必曰利？”或者是《扁鹊见蔡桓公》里的那句：“君有疾在腠理，不治将恐深。”亦或者是《孟子·公孙丑下》的“得道者多助，失道者寡助。”自古以来，能告诫者着实不多，而告诫者里面有远见卓识甚少，而能听告诫的人更是凤毛麟角。所以很多人最后悟道了，慢慢了理解了这些规律，就知道不再跟世界为敌，开始学会顺势而为。有时候，既然无法渡人，那就先尝试着渡己吧。</p>
+<p><img src="/post/ecb17c50/1240-20210222145903999.jpeg" alt="img"></p>
+<p>​    俗话说得好，喝醉酒的人都会说自己没醉，叫不醒的都是装着睡着的人，自己的人生还得自己掌舵，做自己的船长吧，干嘛非要做他人屋顶的乌鸦呢？天色已经暗去，远处的火烧云也没有了，路灯亮了，城市的夜开始了！</p>
+<p><img src="/post/ecb17c50/1240.png" alt="img"></p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/post/67e9b0b6.html">
+        <span>回忆旧闻-旁若无人的绽放</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/post/ecb17c50.html" id="toc-header" class="mdui-ripple">文章目录</a>
+        
+      </li>
+    </ul>
+  </div>
+
+
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2018 - 2021 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        jsroads
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >

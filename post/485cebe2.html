@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            回忆旧闻-寒风的昔年续 | Jsroads&#39;Blog
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Jsroads'Blog" type="application/atom+xml">
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Jsroads&#39;Blog</a>
+    <a href="/" class="header-subtitle mdui-typo-headline">每次的成长都是从看到自己的无知开始</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">首页</div>
+                </a>
+            
+                
+                <a href="/categories/book" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">读书</div>
+                </a>
+            
+                
+                <a href="/categories/life" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">随笔</div>
+                </a>
+            
+                
+                <a href="/categories/sys" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-gallery"></i>
+                    </div>
+                    <div class="mdui-list-item-content">系列</div>
+                </a>
+            
+                
+                <a href="/categories/tool" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-blog"></i>
+                    </div>
+                    <div class="mdui-list-item-content">技巧</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.png"/>
+                
+            </div>
+            <div class="sidebar-author-name">jsroads</div>
+            <div class="sidebar-description">静坐常思己过，闲谈莫论人非</div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="/asroads@163.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://github.com/jsroads" target="_blank" rel="noopener" class="mdui-chip-title">jsroads</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a href="https://github.com/asroads" target="_blank" rel="noopener" class="mdui-chip-title">asroads</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a href="https://asroads.github.io/" target="_blank" rel="noopener" class="mdui-list-item mdui-ripple">
+                            Asroads的博客
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/post/485cebe2.html">回忆旧闻-寒风的昔年续</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2021-02-15
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2021-02-22
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;<a class="category-link" href="/categories/sys/">sys</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=回忆旧闻-寒风的昔年续&url=http://life.asroads.com/post/485cebe2.html&pic=http://life.asroads.com/icons/favicon.ico&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=回忆旧闻-寒风的昔年续&url=http://life.asroads.com/post/485cebe2.html&via=jsroads" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://life.asroads.com/post/485cebe2.html" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://life.asroads.com/post/485cebe2.html" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://life.asroads.com/post/485cebe2.html&title=回忆旧闻-寒风的昔年续" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=Jsroads&#39;Blog&title=回忆旧闻-寒风的昔年续&summary=静坐常思己过，闲谈莫论人非&pics=http://life.asroads.com/icons/favicon.ico&url=http://life.asroads.com/post/485cebe2.html" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://life.asroads.com/post/485cebe2.html&text=回忆旧闻-寒风的昔年续" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/%E5%9B%9E%E5%BF%86/ >回忆</a>
+      </i>
+    
+  </div>
+
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <p>春节将近，很多人开始收拾行李，准备踏上归途了，中国人都讲究春节归故里，无论在外面混的好，还是混的差的都在这个时节，踏上归程，哪怕是回去看看老屋，呼吸一下老家的寒风，有儿时的记忆，记忆里有个做梦长不大，盼春节的少年。</p>
+<a id="more"></a>
+
+<p>时代发展的真快，从镇上到县城的路修了，乡村也能收发快递了，镇上多了两条街，县城多了许多楼盘，乡下人都开始计划如何在城里生活，也许只有春节这几天，好多年轻人开始回到村里，偶尔路边还能遇到熟悉的面孔，打个招呼，寒暄几句。这两年渐渐感觉，农村的人越来越少，家乡的味道越来越淡，过去条件差的时候，大家只能晚上围着火盆烤火聊天，拉家常，后来日子好了，用上了家用电器，晚上一边包饺子，一边看春晚。再后来，春晚觉得没意思了，就出去走走，转转，有时候遇到牌局，有时候遇到酒局，新年的钟声响起，大家起身回家。</p>
+<p>以前总感觉农村人善良淳朴，实在，可这些年随着年纪慢慢长大，发现了很多时候，现实并非如此，有时候某些特点一旦过了，就会变成一个缺点。很多大龄未婚青年不愿意被问起婚姻大事，就像期末考试不理想的学生不愿意别人问起期末成绩一样，心里别扭。有的人是关心，有的人是客套，真真假假，假假真真。我的人生答卷正好可以让我亲身体验到起起伏伏，波波折折，其中所闻所感，受益颇多，经历多了，眼神就会变得复杂，对未来就会少些幻想，就像小王子的结局那样，一样的故事，不同的年纪去读这个故事，看到的是不同的结局。</p>
+<p>很多时候，我们只能独行，就像上学的时候，自己总是只能一个人来回往返，路是陌生的，就是危机四伏，顾名思义，危险和机遇并存，就像现在的网络游戏一样，不断的遭遇挑战和奖励，最终能到达目的地的就是晋级玩家。个人都是有自己的思维模式的，但是群体的意识就很弱了，群体得出的很多结论都是愚蠢的，愚昧的，无知的。个人短期无法解决这些矛盾，必须等待时机，等到群体开始被新的思想洗脑，被新的观点一次次的碰撞才能一点点的改变。</p>
+<p>选择是一种舍弃和得到的行为，如果我们总是盯着得到的不放就会错失下一次的选择，总是盯着放弃的，就会错失眼前的得到。就像去年说的，我可能选择了一条少有人走的路。</p>
+<p>近一个月的居家避疫生活，各种疫情信息应接不暇，有真的，有假的，有开心的，有不开心的，有让人愤恨的，有让人感动的，后面这几天，慢慢的我开始平静下来，不再那么轻浮，开始想着作为一个普通人，接下来的日子该如何做。</p>
+<p>最开始在苏宁拼团上下单了200个N95，以为可以安枕无忧的应对节后的外出防护，谁曾想，年后被商家通知，无法生产，让退单，一下子让我感觉好紧张，于是开始寻找医用口罩，然后医用口罩也没货了，那就买医用酒精吧，不曾想医用酒精也没有了，附近两个药店都没货了，接下来让我开始反思生活。</p>
+<p>于是后面制定了个简单的计划，买了一些生活的必需品，米面，孩子的奶粉，尿垫，其他的东西 暂时只能搁置了，正常渠道是买不到口罩了，非正常渠道也找不到啊，日子总得继续吧。</p>
+<p>其实越是关键时期，越能看透更多的人性，无论是人性的恶，还是人性的善，去年一直在听西方哲学史，特别喜欢伏尔泰的那句话“我不同意你的说法，但我誓死捍卫你说话的权利！”我们的媒体就应该这样，有啥问题，大家说出来嘛，来争论，来举证，用事实去证明对方是错的，信息透明才是老百姓不惶恐的重要原因。</p>
+<p>一个有家庭的人，这个时候，愈发觉得活着的意义，特别是健康的活着，人生而为人，活着，总是想要找个信仰，为活着找个信仰。这个时候才想起，那些曾经觉得平淡无奇的日子，竟是多么的美好。这次看来，几个月都要预防疫情传播了，历史上，很多时候人类并没有战胜疾病，更多的时候是付出了高昂的代价。敬畏大自然，敬畏生命，保护环境，其实就是保护我们自己。</p>
+<h3 id="小思考"><a href="#小思考" class="headerlink" title="小思考"></a>小思考</h3><p>阳台上的几盆花</p>
+<p>不知觉间已然伴我几年</p>
+<p>隐约记得是个夜晚从街角处买回来</p>
+<p>卖花的人还送了我一个空空的小鱼缸</p>
+<p>后来的某天</p>
+<p>鱼缸里有了几条小鱼</p>
+<p>有时候我会把鱼缸放在窗台前</p>
+<p>看它们在阳光下的水里</p>
+<p>游啊，游啊，游啊</p>
+<p>初夏的夜晚</p>
+<p>深夜晚归</p>
+<p>路过马上打烊的水果店</p>
+<p>半个西瓜，一把勺子</p>
+<p>那年的一盆芦荟</p>
+<p>不知为何到了夏天就枯萎了</p>
+<p>那一株从公园里讨来的兰花</p>
+<p>却长的几分模样</p>
+<p>不知道搬家的时候</p>
+<p>有没有被带走</p>
+<p>或是丢弃到了墙角</p>
+<p>曾几何起便很少出门</p>
+<p>熟悉的风景里透着熟悉的风</p>
+<p>季节更替，曲终人散</p>
+<p>听了很多的歌</p>
+<p>走了很多的路</p>
+<p>记不清哪些是真实</p>
+<p>记不清哪些是臆想</p>
+<p>初升的阳光透光窗户</p>
+<p>几盆花透着点点水珠</p>
+<p>几条鱼摇曳着斑斓的尾巴</p>
+<h3 id="需要更多的坚强"><a href="#需要更多的坚强" class="headerlink" title="需要更多的坚强"></a>需要更多的坚强</h3><p>很多时候</p>
+<p>也曾想过放弃</p>
+<p>可想想已经走了这么远</p>
+<p>觉得有必要继续走下去。</p>
+<p>我知道很多时候</p>
+<p>你们笑着说生活不易</p>
+<p>我知道很多时候</p>
+<p>黑夜里一个人不肯睡去</p>
+<p>走过夜路的人都深深的懂的</p>
+<p>并不是所有的路</p>
+<p>都会有个喜欢的人陪你走下去</p>
+<p>幸福是什么</p>
+<p>一个人对着镜子的自己沉默不说话</p>
+<p>幸福是什么</p>
+<p>为了圆满的自以为是的欺骗了大家</p>
+<p>每次孤独退去的时候</p>
+<p>我都对自己说</p>
+<p>未来的生活还有意想不到的挣扎</p>
+<p>年轻的时候</p>
+<p>爱过，哭过，笑过</p>
+<p>那些已经是触不到的天涯</p>
+<p>每次争吵的时候</p>
+<p>我都曾想过</p>
+<p>如你们所愿的向生活妥协</p>
+<p>可最后我总是还想着奋力挣扎</p>
+<p>力气用尽汗水淋漓</p>
+<p>那些都曾泛黄的过去</p>
+<p>我想更多的是该放下</p>
+<p>你们笑着看着我</p>
+<p>高傲的说生活依旧会开花</p>
+<p>生活不是非黑即白</p>
+<p>所有的问题都有答案</p>
+<p>所有的故事都会有个结局</p>
+<p>既然已经落寞</p>
+<p>我们好好的祝福彼此</p>
+<p>没有掌声，没有喧哗</p>
+<p>未知的生活里</p>
+<p>总是藏着周围的人难以理解的好奇</p>
+<p>未知的路途里</p>
+<p>总是会遇到意料之外的美景</p>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+      <a rel="prev" class="post-nav-item mdui-float-left" href="/post/67e9b0b6.html">
+        <i class="iconfont icon-angle-left"></i>
+        <span>回忆旧闻-旁若无人的绽放</span>
+      </a>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/post/42039bfe.html">
+        <span>回忆旧闻-寒风的昔年</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/post/485cebe2.html" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#小思考"><span class="toc-number">1.</span> <span class="toc-text">小思考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#需要更多的坚强"><span class="toc-number">2.</span> <span class="toc-text">需要更多的坚强</span></a></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2018 - 2021 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        jsroads
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
