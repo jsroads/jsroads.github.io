@@ -1,0 +1,3 @@
+[submodule "themes/concise"] 
+  path = themes/concise 
+  url = git://url-of-source/
